@@ -1,1 +1,14 @@
+@use "../abstract/" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  font-size: 1rem;
+  color: $color-primary-desaturated-red;
+  background-image: url(../../img/bg-pattern-desktop.svg),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-repeat: no-repeat;
+  background-size: contain;
+}
