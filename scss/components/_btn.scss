@@ -1,0 +1,23 @@
+@use "../abstract/" as *;
+
+.btn {
+  border: none;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1.11em 1.7em;
+  border-radius: 30px;
+
+  &--primary {
+    position: absolute;
+    right: 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+}

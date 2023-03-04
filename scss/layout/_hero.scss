@@ -1,0 +1,30 @@
+@use "../abstract/" as *;
+
+.hero {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &-input {
+      border-radius: 35px;
+      padding: 1rem 2rem;
+      border: 1px solid $color-primary-desaturated-red;
+      background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+      &:focus {
+        outline: 1px solid $color-primary-soft-red;
+      }
+
+      &::placeholder {
+        color: $color-primary-desaturated-red;
+      }
+    }
+  }
+
+  &__error-icon {
+    position: absolute;
+    top: 16px;
+    right: 69px;
+  }
+}

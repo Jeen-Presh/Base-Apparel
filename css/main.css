@@ -84,6 +84,114 @@ body {
   background-image: url(../../img/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
   background-repeat: no-repeat;
   background-size: contain;
+  line-height: 1.4;
+}
+
+.heading-primary {
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 1.1;
+  letter-spacing: 16px;
+  text-transform: uppercase;
+}
+
+span {
+  font-weight: 600;
+  color: hsl(0deg, 0%, 0%);
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.mt-16 {
+  padding-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.px-8 {
+  padding-inline: 2rem;
+}
+
+.my-8 {
+  margin-block: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header__logo {
+  width: 8rem;
+}
+
+.hero__form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hero__form-input {
+  border-radius: 35px;
+  padding: 1rem 2rem;
+  border: 1px solid hsl(0deg, 36%, 70%);
+  background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+}
+.hero__form-input:focus {
+  outline: 1px solid hsl(0deg, 93%, 68%);
+}
+.hero__form-input::placeholder {
+  color: hsl(0deg, 36%, 70%);
+}
+.hero__error-icon {
+  position: absolute;
+  top: 16px;
+  right: 69px;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1.11em 1.7em;
+  border-radius: 30px;
+}
+.btn--primary {
+  position: absolute;
+  right: 0;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+}
+.btn:hover, .btn:active {
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=main.css.map */
