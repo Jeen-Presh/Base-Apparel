@@ -24,12 +24,11 @@
       /></a>
     </header>
     <main>
+      <picture class="hero__picture">
+        <source media="(min-width:30em)" srcset="img/hero-desktop.jpg" />
+        <img src="img/hero-mobile.jpg" alt="" class="hero__img" />
+      </picture>
       <section class="hero">
-        <picture class="hero__picture">
-          <source media="(min-width: )" srcset="" />
-          <img src="img/hero-mobile.jpg" alt="" class="hero__img" />
-        </picture>
-
         <div class="hero__content pt-16 px-8 text-center">
           <h1 class="heading-primary">We're <span>coming soon</span></h1>
           <p class="hero__description my-8">
@@ -50,11 +49,15 @@
               required
               class="hero__form-input"
             />
-            <img src="img/icon-error.svg" alt="" class="hero__error-icon" />
-            <button class="btn btn--primary" aria-label="Submit">
-              <img src="img/icon-arrow.svg" alt="" />
+            <img
+              src="img/icon-error.svg"
+              alt=""
+              class="hero__error-icon hidden"
+            />
+            <button type="submit" class="btn btn--primary" aria-label="Submit">
+              <img aria-hidden="true" src="img/icon-arrow.svg" alt="" />
             </button>
-            <p class="hero__error-message hidden mt-2">
+            <p class="hero__error-message hidden mt-2 hidden">
               Please provide a valid email
             </p>
           </form>

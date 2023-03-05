@@ -12,6 +12,15 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   line-height: 1.4;
+
+  @media (min-width: 46.8em) {
+    display: grid;
+
+    grid-template-areas:
+      "head img"
+      "hero img"
+      "footer footer";
+  }
 }
 
 .heading-primary {
@@ -20,9 +29,29 @@ body {
   line-height: 1.1;
   letter-spacing: 16px;
   text-transform: uppercase;
+  max-width: 20ch;
+  margin: auto;
 }
 
 span {
   font-weight: $font-weight-semibold;
   color: $color-black;
+}
+
+@media (min-width: 46.8em) {
+  picture {
+    grid-area: img;
+  }
+
+  main {
+    grid-area: hero;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  header {
+    grid-area: head;
+  }
 }

@@ -86,6 +86,12 @@ body {
   background-size: contain;
   line-height: 1.4;
 }
+@media (min-width: 46.8em) {
+  body {
+    display: grid;
+    grid-template-areas: "head img" "hero img" "footer footer";
+  }
+}
 
 .heading-primary {
   font-weight: 300;
@@ -93,13 +99,29 @@ body {
   line-height: 1.1;
   letter-spacing: 16px;
   text-transform: uppercase;
+  max-width: 20ch;
+  margin: auto;
 }
 
 span {
   font-weight: 600;
-  color: hsl(0deg, 0%, 0%);
+  color: hwb(0 0% 100%);
 }
 
+@media (min-width: 46.8em) {
+  picture {
+    grid-area: img;
+  }
+  main {
+    grid-area: hero;
+  }
+  footer {
+    grid-area: footer;
+  }
+  header {
+    grid-area: head;
+  }
+}
 .p-8 {
   padding: 2rem;
 }
@@ -138,14 +160,28 @@ span {
   width: 1px;
 }
 
+.hidden {
+  display: none;
+}
+
 .header__logo {
   width: 8rem;
 }
 
+.hero__img {
+  width: 100%;
+  object-fit: contain;
+}
+.hero__description {
+  max-width: 43ch;
+  margin-inline: auto;
+}
 .hero__form {
   display: flex;
   flex-direction: column;
   position: relative;
+  max-width: 25rem;
+  margin: auto;
 }
 .hero__form-input {
   border-radius: 35px;
